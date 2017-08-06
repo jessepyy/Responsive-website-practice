@@ -1,9 +1,28 @@
 .hero
-  background: linear-gradient(to right, $main, $secondary)
+  background: url(../img/cta.jpg)
+  background-size: cover
+  background-position: center
+  background-color: $main
+  background-blend-mode: multiply
   color: $text-inverse
 
   padding-top: 8em
   padding-bottom: 8em
   text-align: center
 
-  .hero-img
+  @media (min-width: 725px)
+    text-align: left
+    padding-bottom: 0
+    height: 80vmin
+
+.hero-text
+  @media (min-width: 725px)
+    margin-top: 9vmax
+
+.hero-img
+  display: none
+  transform: scale(1.1)
+  max-height:
+
+  @media (max-height: 750px)
+    display: none
